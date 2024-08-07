@@ -21,7 +21,7 @@ export default function Photo() {
             opacity: 1,
             transition: { delay: 2.4, duration: 0.4, ease: "easeInOut" },
           }}
-          className="absolute size-[298px] xl:size-[498px] mix-blend-lighten"
+          className="absolute size-[298px] xl:size-[448px] mix-blend-lighten"
         >
           <Image
             src={profileImage}
@@ -30,11 +30,12 @@ export default function Photo() {
             quality={100}
             fill
             className="object-contain"
+            sizes="width: 100%"
           />
         </motion.div>
         {/* circle */}
         <motion.svg
-          className="size-[300px] xl:size-[506px]"
+          className="size-[300px] xl:size-[456px]"
           fill="transparent"
           viewBox="0 0 506 506"
           xmlns="http://www.w3.org/2000/svg"
