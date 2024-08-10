@@ -28,6 +28,12 @@ import {
 } from "@radix-ui/react-tooltip";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { motion } from "framer-motion";
+import Image from "next/image";
+// image
+import ddobak from "../../public/resume/projects/ddobak.png";
+import refill from "../../public/resume/projects/refill.png";
+import donworry from "../../public/resume/projects/donworry.png";
+import ttiving from "../../public/resume/projects/ttiving.png";
 
 // about data
 const about = {
@@ -68,29 +74,32 @@ const project = {
     "everybody hello everybody hello everybody hello everybody hello everybody hello everybody hello",
   items: [
     {
-      serviceName: "Ttobakttobak",
-      theme: "AI Self-Diagnosis and Consultation Platform for Hair Loss)",
-      position:
-        "Front-end Developer (React, Redux/Toolkit, React-Router-Dom, TypeScript), Team Leader",
+      serviceName: "TTobakTTobak",
+      theme: "AI-based Handwriting Creation Service",
+      position: "Front-end, Team Leader",
+      tech: "React, Redux/Toolkit, React-Router-Dom, TypeScript",
       duration: "July 2023 - August 2023",
     },
     {
       serviceName: "DonWorry",
       theme: "User Spending Management and Improvement Service",
-      position: "Front-end Developer (React-Native, TypeScript)",
+      position: "Front-end",
+      tech: "React-Native, TypeScript",
       duration: "August 2023 - October 2023",
     },
     {
       serviceName: "RE:Fill",
       theme: "AI Self-Diagnosis and Consultation Platform for Hair Loss",
-      position: "Front-end Developer (React, TypeScript, Tailwind CSS)",
+      position: "Front-end",
+      tech: "React, TypeScript, Tailwind CSS",
       duration: "July 2023 - August 2023",
     },
     {
       serviceName: "TTiving",
-      them: "Movie Recommendation and Filming Location Search Service Based on Custom Algorithms",
-      position:
-        "Full-stack Developer (Django, Vue, Vuex, Bootstrap), Team Leader",
+      theme:
+        "Movie Recommendation and Filming Location Search Service Based on Custom Algorithms",
+      position: "Full-stack, Team Leader",
+      tech: "Django, Vue, Vuex, Bootstrap",
       duration: "May 2023 - May 2023",
     },
   ],
@@ -184,5 +193,97 @@ const skills = {
 };
 
 export default function Resume() {
-  return <motion.div>resume page</motion.div>;
+  return (
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{
+        opacity: 1,
+        transition: { delay: 2.4, duration: 0.4, ease: "easeIn" },
+      }}
+      className="min-h-[76vh] flex items-center justify-center py-8 xl:py-0"
+    >
+      <div className="container mx-auto">
+        <Tabs
+          defaultValue="project"
+          className="flex flex-col xl:flex-row gap-[40px]"
+        >
+          <TabsList className="flex flex-col w-full max-w-[340px] mx-auto xl:mx-0 gap-4">
+            <TabsTrigger value="project">Project</TabsTrigger>
+            <TabsTrigger value="experience">Experience</TabsTrigger>
+            <TabsTrigger value="skills">Skills</TabsTrigger>
+            <TabsTrigger value="about">About me</TabsTrigger>
+          </TabsList>
+
+          {/* content */}
+          <div className="min-h-[64vh] w-full">
+            {/* project */}
+            <TabsContent value="project" className="w-full">
+              <div className="flex flex-col gap-[20px] text-center xl:text-left">
+                <h3 className="text-4xl font-bold">{project.title}</h3>
+                <p className="max-w-[560px] text-white/60 mx-auto xl:mx-0">
+                  {project.description}
+                </p>
+                <ScrollArea className="h-[360px]">
+                  <ul className="grid gap-[20px] grid-cols-1">
+                    {project.items.map((item, index) => {
+                      return (
+                        <li
+                          key={item.serviceName}
+                          className="bg-[#232329] h-[240px] py-6 px-10 rounded-xl
+                        flex flex-col justify-center items-center lg:items-start gap-1"
+                        >
+                          <p className="text-accent">{item.duration}</p>
+                          <div>
+                            <h3 className="text-3xl min-h-[50px] text-center lg:text-left">
+                              {item.serviceName}
+                            </h3>
+                          </div>
+                          {/* dot */}
+                          <div>
+                            <div className="flex items-start gap-[6px]">
+                              <div className="flex items-center gap-[6px]">
+                                <div className="h-[6px] w-[6px] rounded-full bg-accent"></div>
+                                <span className="text-accent">Position:</span>
+                              </div>
+                              <p className="text-left">{item.position}</p>
+                            </div>
+                            <div className="flex items-start gap-[6px]">
+                              <div className="flex items-center gap-[6px]">
+                                <div className="h-[6px] w-[6px] rounded-full bg-accent"></div>
+                                <span className="text-accent">Tech:</span>
+                              </div>
+                              <p className="text-left">{item.tech}</p>
+                            </div>
+                            <div className="flex items-start gap-[6px]">
+                              <div className="flex items-center gap-[6px]">
+                                <div className="h-[6px] w-[6px] rounded-full bg-accent"></div>
+                                <span className="text-accent">Theme:</span>
+                              </div>
+                              <p className="text-left">{item.theme}</p>
+                            </div>
+                          </div>
+                        </li>
+                      );
+                    })}
+                  </ul>
+                </ScrollArea>
+              </div>
+            </TabsContent>
+            {/* Experience */}
+            <TabsContent value="experience" className="w-full">
+              experience
+            </TabsContent>
+            {/* skills */}
+            <TabsContent value="skills" className="w-full">
+              skills
+            </TabsContent>
+            {/* about */}
+            <TabsContent value="about" className="w-full">
+              about
+            </TabsContent>
+          </div>
+        </Tabs>
+      </div>
+    </motion.div>
+  );
 }
