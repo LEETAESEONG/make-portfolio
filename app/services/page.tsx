@@ -10,28 +10,28 @@ const services = [
     title: "React.js",
     description:
       "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
-    href: "",
+    href: "https://github.com/LEETAESEONG/Ddobak",
   },
   {
     num: "02",
     title: "Next.js",
     description:
       "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
-    href: "",
+    href: "https://github.com/LEETAESEONG/Do-it",
   },
   {
     num: "03",
     title: "Vue.js",
     description:
       "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
-    href: "",
+    href: "https://github.com/LEETAESEONG/TTiving",
   },
   {
     num: "04",
-    title: "Django",
+    title: "Figma",
     description:
       "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.S",
-    href: "",
+    href: "https://www.figma.com/design/cCTUT1gURh1zebCWU5K2Sa/C210?node-id=0-1&t=FnkXYcwEamqgYHNp-0",
   },
 ];
 
