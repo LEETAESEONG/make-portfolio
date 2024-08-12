@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { CiMenuFries } from "react-icons/ci";
 import { links } from "./Nav";
+import { DialogTitle, DialogDescription } from "@radix-ui/react-dialog"; // DialogDescription 추가
 
 export default function MobileNav() {
   const pathname = usePathname();
@@ -14,6 +15,11 @@ export default function MobileNav() {
         <CiMenuFries className="text-[32px] text-accent" />
       </SheetTrigger>
       <SheetContent className="flex flex-col">
+        <DialogTitle className="sr-only">Navigation Menu</DialogTitle>
+        <DialogDescription className="sr-only">
+          This is the navigation menu
+        </DialogDescription>{" "}
+        {/* 설명 추가 */}
         {/* logo */}
         <div className="mt-24 mb-24 text-center text-2xl">
           <Link href={"/"}>

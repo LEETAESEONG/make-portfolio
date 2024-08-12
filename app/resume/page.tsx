@@ -223,7 +223,7 @@ export default function Resume() {
                 <p className="max-w-[560px] text-white/60 mx-auto xl:mx-0">
                   {project.description}
                 </p>
-                <ScrollArea className="h-[400px] lg:h-[360px] pr-6">
+                <ScrollArea className="h-[400px] lg:h-[360px] iphone:pr-6">
                   <ul className="grid gap-[20px] grid-cols-1">
                     {project.items.map((item) => {
                       return (
@@ -277,7 +277,7 @@ export default function Resume() {
                 <p className="max-w-[560px] text-white/60 mx-auto xl:mx-0">
                   {education.description}
                 </p>
-                <ScrollArea className="h-[400px] lg:h-[360px] pr-6">
+                <ScrollArea className="h-[400px] lg:h-[360px] iphone:pr-6">
                   <ul className="grid gap-[20px] grid-cols-1">
                     {education.items.map((item) => {
                       return (
@@ -318,7 +318,7 @@ export default function Resume() {
                     {skills.description}
                   </p>
                 </div>
-                <ScrollArea className="h-[400px] lg:h-[360px] pr-6">
+                <ScrollArea className="h-[400px] lg:h-[360px] iphone:pr-6">
                   <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 xl:gap-[20px] gap-1">
                     {skills.skillList.map((skill) => {
                       return (
