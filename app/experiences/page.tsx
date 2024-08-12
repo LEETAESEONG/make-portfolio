@@ -6,6 +6,11 @@ import { Swiper, SwiperSlide, SwiperClass } from "swiper/react";
 import "swiper/css";
 
 import { BsArrowUpRight, BsGithub } from "react-icons/bs";
+import thumb1 from "../../public/work/thumb1.png";
+import thumb2 from "../../public/work/thumb2.png";
+import thumb3 from "../../public/work/thumb3.png";
+import thumb4 from "../../public/work/thumb4.png";
+import thumb5 from "../../public/work/thumb5.png";
 
 import {
   Tooltip,
@@ -16,6 +21,7 @@ import {
 
 import Link from "next/link";
 import Image from "next/image";
+import WorkSliderBtns from "@/components/WorkSliderBtns";
 
 const projects = [
   {
@@ -25,14 +31,13 @@ const projects = [
     description:
       "forntend forntend forntend forntend forntend forntend forntend",
     stack: [
-      { name: "React.js" },
+      { name: "Next.js" },
       { name: "TypeScript" },
       { name: "Redux/Toolkit" },
-      { name: "React-Router-dom" },
     ],
-    image: "",
+    image: thumb1,
     live: "",
-    github: "",
+    github: "https://github.com/LEETAESEONG/Do-it",
   },
   {
     num: "02",
@@ -41,13 +46,14 @@ const projects = [
     description:
       "forntend forntend forntend forntend forntend forntend forntend",
     stack: [
-      { name: "React-Native" },
+      { name: "React.js" },
       { name: "TypeScript" },
-      { name: "figma" },
+      { name: "Redux/Toolkit" },
+      { name: "React_Router_dom" },
     ],
-    image: "",
+    image: thumb2,
     live: "",
-    github: "",
+    github: "https://github.com/LEETAESEONG/Ddobak",
   },
   {
     num: "03",
@@ -55,21 +61,32 @@ const projects = [
     title: "project 3",
     description:
       "forntend forntend forntend forntend forntend forntend forntend",
-    stack: [{ name: "React.js" }, { name: "TypeScript" }, { name: "figma" }],
-    image: "",
+    stack: [{ name: "ReactNative" }, { name: "TypeScript" }, { name: "Figma" }],
+    image: thumb3,
     live: "",
-    github: "",
+    github: "https://github.com/LEETAESEONG/DonWorry",
   },
   {
     num: "04",
-    category: "full stack",
+    category: "frontend",
     title: "project 4",
     description:
       "forntend forntend forntend forntend forntend forntend forntend",
-    stack: [{ name: "Vue.js" }, { name: "Vuex" }, { name: "Django" }],
-    image: "",
+    stack: [{ name: "React.js" }, { name: "TypeScript" }, { name: "figma" }],
+    image: thumb4,
     live: "",
-    github: "",
+    github: "https://github.com/LEETAESEONG/ReFill",
+  },
+  {
+    num: "05",
+    category: "full stack",
+    title: "project 5",
+    description:
+      "forntend forntend forntend forntend forntend forntend forntend",
+    stack: [{ name: "Vue.js" }, { name: "Vuex" }, { name: "Django" }],
+    image: thumb5,
+    live: "",
+    github: "https://github.com/LEETAESEONG/TTiving",
   },
 ];
 
@@ -84,7 +101,14 @@ export default function Experiences() {
   return (
     <motion.section
       initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
+      animate={{
+        opacity: 1,
+        transition: {
+          delay: 2.4,
+          duration: 0.4,
+          ease: "easeIn",
+        },
+      }}
       className="min-h-[73vh] flex flex-col justify-center py-8 xl:px-0"
     >
       <div className="container mx-auto">
@@ -109,10 +133,10 @@ export default function Experiences() {
               {/* project description */}
               <p className="text-white/60">{project.description}</p>
               {/* stack */}
-              <ul className="flex gap-4">
+              <ul className="flex gap-4 flex-wrap">
                 {project.stack.map((item, index) => {
                   return (
-                    <li key={index} className="text-xl">
+                    <li key={index} className="text-xl text-accent break-words">
                       {item.name}
                       {/* remove the last comma */}
                       {index !== project.stack.length - 1 && ","}
@@ -130,12 +154,12 @@ export default function Experiences() {
                     <Tooltip>
                       <TooltipTrigger
                         className="size-[64px] rounded-full
-                      bg-white/5 flex justify-center items-center hover:text-accent"
+                      bg-white/5 flex justify-center items-center hover:text-accent text-white text-3xl"
                       >
-                        <BsArrowUpRight className="text-white text-3xl" />
+                        <BsArrowUpRight />
                       </TooltipTrigger>
-                      <TooltipContent>
-                        <p>Live project</p>
+                      <TooltipContent className="bg-white rounded-[4px] px-2">
+                        <p className="capitalize text-black">Live project</p>
                       </TooltipContent>
                     </Tooltip>
                   </TooltipProvider>
@@ -146,12 +170,14 @@ export default function Experiences() {
                     <Tooltip>
                       <TooltipTrigger
                         className="size-[64px] rounded-full
-                      bg-white/5 flex justify-center items-center hover:text-accent"
+                      bg-white/5 flex justify-center items-center hover:text-accent text-white text-3xl"
                       >
-                        <BsGithub className="text-white text-3xl" />
+                        <BsGithub />
                       </TooltipTrigger>
-                      <TooltipContent>
-                        <p>Github repository</p>
+                      <TooltipContent className="bg-white rounded-[4px] px-2">
+                        <p className="capitalize text-black">
+                          Github repository
+                        </p>
                       </TooltipContent>
                     </Tooltip>
                   </TooltipProvider>
@@ -170,19 +196,34 @@ export default function Experiences() {
                 return (
                   <SwiperSlide key={index} className="w-full">
                     <div
-                      className="h-[440px] relative flex justify-center
-                    items-center bg-pink-50/20"
+                      className="h-[420px] relative flex justify-center
+                    items-center bg-pink-50/20 rounded-xl"
                     >
-                      <Image
-                        src={project.image}
-                        fill
-                        className="object-cover"
-                        alt="projectImage"
-                      />
+                      {/* overlay */}
+                      <div className="absolute top-0 bottom-0 size-full bg-black/10 z-10"></div>
+                      {/* image */}
+                      <div className="relative size-full rounded-xl">
+                        <Image
+                          src={project.image}
+                          fill
+                          alt="projectImage"
+                          sizes="w-100vh"
+                          priority={index == 0 ? true : false}
+                          className="rounded-xl"
+                        />
+                      </div>
                     </div>
                   </SwiperSlide>
                 );
               })}
+              {/* slider buttons */}
+              <WorkSliderBtns
+                containerStyles="flex gap-2 absolute right-0 bottom-[calc(50%_-_22px)]
+                xl:bottom-0 z-20 w-full justify-between xl:w-max xl:justify-none"
+                btnStyles="bg-accent hover:bg-accent-hover text-primary text-[22px]
+                size-[44px] flex justify-center items-center transition-all rounded-xl"
+                iconsStyles=""
+              />
             </Swiper>
           </div>
         </div>
