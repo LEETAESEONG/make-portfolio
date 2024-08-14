@@ -25,7 +25,7 @@ export default function Home() {
               <span className="text-accent">T</span>ae{" "}
               <span className="text-accent">S</span>eong
             </h1>
-            <p className="max-w-[500px] mb-9 text-white/80">
+            <p className="max-w-[500px] mb-9 text-modernzen/80">
               I have completed the Samsung Software Academy for Youth (SSAFY)
               program. I{"'"}m proficient in JavaScript and Python. Currently,
               My great interest is Next.js and I{"'"}m studying it.

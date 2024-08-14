@@ -32,7 +32,8 @@ const config = {
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
-        primary: "#1c1c22",
+        primary: "#021526",
+        modernzen: "#E2E2B6",
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
           foreground: "hsl(var(--secondary-foreground))",
@@ -46,8 +47,8 @@ const config = {
           foreground: "hsl(var(--muted-foreground))",
         },
         accent: {
-          DEFAULT: "#00ff99",
-          hover: "#00e187",
+          DEFAULT: "#6EACDA",
+          hover: "#03346E",
         },
         popover: {
           DEFAULT: "hsl(var(--popover))",

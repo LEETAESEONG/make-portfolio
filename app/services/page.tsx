@@ -73,13 +73,13 @@ export default function Services() {
                 </div>
                 {/* title */}
                 <h2
-                  className="text-[36px] font-bold leading-none text-white
+                  className="text-[36px] font-bold leading-none text-modernzen
                 group-hover:text-accent transition-all duration-500"
                 >
                   {service.title}
                 </h2>
                 {/* description */}
-                <p className="text-white/60">{service.description}</p>
+                <p className="text-modernzen/60">{service.description}</p>
                 {/* border */}
                 <div className="border-b border-white/20 w-full"></div>
               </div>
