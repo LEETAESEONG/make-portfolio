@@ -5,8 +5,10 @@ import { FiDownload } from "react-icons/fi";
 import Socail from "@/components/Social";
 import Photo from "@/components/Photo";
 import Stats from "@/components/Stats";
+import GetUsersData from "./utils/get-users-data";
 
 export default function Home() {
+  GetUsersData();
   return (
     <section className="h-full">
       <div className="container mx-auto">
