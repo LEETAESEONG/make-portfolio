@@ -125,13 +125,13 @@ export default function Experiences() {
               ></div>
               {/* project category */}
               <h2
-                className="text-[36px] font-bold leading-none text-white
+                className="text-[36px] font-bold leading-none text-modernzen
               group-hover:text-accent transition-all duration-500 capitalize"
               >
                 {project.category} project
               </h2>
               {/* project description */}
-              <p className="text-white/60">{project.description}</p>
+              <p className="text-modernzen/60">{project.description}</p>
               {/* stack */}
               <ul className="flex gap-4 flex-wrap">
                 {project.stack.map((item, index) => {
@@ -154,7 +154,7 @@ export default function Experiences() {
                     <Tooltip>
                       <TooltipTrigger
                         className="size-[64px] rounded-full
-                      bg-white/5 flex justify-center items-center hover:text-accent text-white text-3xl"
+                      bg-white/5 flex justify-center items-center hover:text-accent text-modernzen text-3xl"
                       >
                         <BsArrowUpRight />
                       </TooltipTrigger>
@@ -170,7 +170,7 @@ export default function Experiences() {
                     <Tooltip>
                       <TooltipTrigger
                         className="size-[64px] rounded-full
-                      bg-white/5 flex justify-center items-center hover:text-accent text-white text-3xl"
+                      bg-white/5 flex justify-center items-center hover:text-accent text-modernzen text-3xl"
                       >
                         <BsGithub />
                       </TooltipTrigger>

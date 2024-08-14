@@ -53,9 +53,9 @@ export default function Contact() {
         <div className="flex flex-col xl:flex-row gap-[20px]">
           {/* form */}
           <div className="xl:w-[54%] order-2 xl:order-none">
-            <form className="flex flex-col gap-4 p-5 bg-[#27272c] rounded-xl">
+            <form className="flex flex-col gap-4 p-5 bg-[#113351] rounded-xl">
               <h3 className="text-3xl text-accent">Let{"'"}s work together</h3>
-              <p className="text-white/60">
+              <p className="text-modernzen/60">
                 hello hello hello hello hello hello hello hello hello hello
                 hello hello hello hello hello hello hello hello hello hello
               </p>
@@ -101,13 +101,13 @@ export default function Contact() {
                 return (
                   <li key={index} className="flex items-center gap-4">
                     <div
-                      className="size-[44px] xl:size-[64px] bg-[#27272c]
+                      className="size-[44px] xl:size-[64px] bg-[#113351]
                     text-accent rounded-[4px] flex items-center justify-center"
                     >
                       <div className="text-[24px]">{item.icon}</div>
                     </div>
                     <div className="flex-1">
-                      <p className="text-white/60">{item.title}</p>
+                      <p className="text-modernzen/60">{item.title}</p>
                       <h3 className="text-lg">{item.description}</h3>
                     </div>
                   </li>

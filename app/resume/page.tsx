@@ -220,7 +220,7 @@ export default function Resume() {
             <TabsContent value="project" className="w-full">
               <div className="flex flex-col gap-[20px] text-center xl:text-left">
                 <h3 className="text-4xl font-bold">{project.title}</h3>
-                <p className="max-w-[560px] text-white/60 mx-auto xl:mx-0">
+                <p className="max-w-[560px] text-modernzen/60 mx-auto xl:mx-0">
                   {project.description}
                 </p>
                 <ScrollArea className="h-[400px] lg:h-[360px] iphone:pr-6">
@@ -229,7 +229,7 @@ export default function Resume() {
                       return (
                         <li
                           key={item.serviceName}
-                          className="bg-[#232329] h-[460px] py-6 px-10 rounded-xl
+                          className="bg-[#0D2543] h-[460px] py-6 px-10 rounded-xl
                         flex flex-col justify-between items-center lg:items-start gap-1
                         xs:h-[400px] sm:h-[340px] md:h-[320px] lg:h-[300px] xl:h-[280px]"
                         >
@@ -274,7 +274,7 @@ export default function Resume() {
             <TabsContent value="education" className="w-full">
               <div className="flex flex-col gap-[20px] text-center xl:text-left">
                 <h3 className="text-4xl font-bold">{education.title}</h3>
-                <p className="max-w-[560px] text-white/60 mx-auto xl:mx-0">
+                <p className="max-w-[560px] text-modernzen/60 mx-auto xl:mx-0">
                   {education.description}
                 </p>
                 <ScrollArea className="h-[400px] lg:h-[360px] iphone:pr-6">
@@ -283,7 +283,7 @@ export default function Resume() {
                       return (
                         <li
                           key={item.institution}
-                          className="bg-[#232329] h-[360px] py-6 px-10 rounded-xl
+                          className="bg-[#0D2543] h-[360px] py-6 px-10 rounded-xl
                         flex flex-col justify-between items-center lg:items-start gap-1
                         sm:h-[240px] xl:h-[220px]"
                         >
@@ -297,7 +297,7 @@ export default function Resume() {
                           <div>
                             <div className="flex items-center gap-[12px]">
                               <div className="size-[8px] rounded-full bg-accent"></div>
-                              <p className="text-left text-white/60">
+                              <p className="text-left text-modernzen/60">
                                 {item.institution}
                               </p>
                             </div>
@@ -314,7 +314,7 @@ export default function Resume() {
               <div className="flex flex-col gap-[20px]">
                 <div className="flex flex-col gap-[20px] text-center xl:text-left">
                   <h3 className="text-4xl font-bold">{skills.title}</h3>
-                  <p className="max-w-[560px] text-white/60 mx-auto xl:mx-0">
+                  <p className="max-w-[560px] text-modernzen/60 mx-auto xl:mx-0">
                     {skills.description}
                   </p>
                 </div>
@@ -326,7 +326,7 @@ export default function Resume() {
                           <TooltipProvider delayDuration={100}>
                             <Tooltip>
                               <TooltipTrigger
-                                className="w-full h-[136px] bg-[#232329] hover:text-accent
+                                className="w-full h-[136px] bg-[#0D2543] hover:text-accent
                             rounded-xl flex justify-center items-center"
                               >
                                 <div className="text-5xl transition-all duration-300">
@@ -354,7 +354,7 @@ export default function Resume() {
             >
               <div className="flex flex-col gap-[20px]">
                 <h3 className="text-3xl font-bold">{about.title}</h3>
-                <p className="max-w-[560px] text-white/60 mx-auto xl:mx-0">
+                <p className="max-w-[560px] text-modernzen/60 mx-auto xl:mx-0">
                   {about.description}
                 </p>
                 <ul
@@ -368,7 +368,7 @@ export default function Resume() {
                         className="flex items-center justify-center xl:justify-start
                         gap-4"
                       >
-                        <span className="text-white/60">{item.fieldName}</span>
+                        <span className="text-modernzen/60">{item.fieldName}</span>
                         <span className="text-xl">{item.fieldValue}</span>
                       </li>
                     );
