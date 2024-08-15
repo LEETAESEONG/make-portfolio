@@ -27,13 +27,13 @@ const projects = [
   {
     num: "01",
     category: "frontend",
-    title: "project 1",
+    title: "Do-it",
     description:
-      "forntend forntend forntend forntend forntend forntend forntend",
+      "A project I created after learning Next.js for the first time",
     stack: [
       { name: "Next.js" },
       { name: "TypeScript" },
-      { name: "Redux/Toolkit" },
+      { name: "Tailwind CSS" },
     ],
     image: thumb1,
     live: "",
@@ -42,14 +42,14 @@ const projects = [
   {
     num: "02",
     category: "frontend",
-    title: "project 2",
-    description:
-      "forntend forntend forntend forntend forntend forntend forntend",
+    title: "TTobakTTobak",
+    description: "AI-based Handwriting Creation Service",
     stack: [
       { name: "React.js" },
       { name: "TypeScript" },
       { name: "Redux/Toolkit" },
       { name: "React_Router_dom" },
+      { name: "Emotion/styled" },
     ],
     image: thumb2,
     live: "",
@@ -58,9 +58,8 @@ const projects = [
   {
     num: "03",
     category: "frontend",
-    title: "project 3",
-    description:
-      "forntend forntend forntend forntend forntend forntend forntend",
+    title: "DonWorry",
+    description: "User Spending Management and Improvement Service",
     stack: [{ name: "ReactNative" }, { name: "TypeScript" }, { name: "Figma" }],
     image: thumb3,
     live: "",
@@ -69,10 +68,14 @@ const projects = [
   {
     num: "04",
     category: "frontend",
-    title: "project 4",
-    description:
-      "forntend forntend forntend forntend forntend forntend forntend",
-    stack: [{ name: "React.js" }, { name: "TypeScript" }, { name: "figma" }],
+    title: "RE:Fill",
+    description: "AI Self-Diagnosis and Consultation Platform for Hair Loss",
+    stack: [
+      { name: "React.js" },
+      { name: "TypeScript" },
+      { name: "Tailwind CSS" },
+      { name: "figma" },
+    ],
     image: thumb4,
     live: "",
     github: "https://github.com/LEETAESEONG/ReFill",
@@ -80,10 +83,15 @@ const projects = [
   {
     num: "05",
     category: "full stack",
-    title: "project 5",
+    title: "TTiving",
     description:
-      "forntend forntend forntend forntend forntend forntend forntend",
-    stack: [{ name: "Vue.js" }, { name: "Vuex" }, { name: "Django" }],
+      "Movie Recommendation and Filming Location Search Service Based on Custom Algorithms",
+    stack: [
+      { name: "Vue.js" },
+      { name: "Vuex" },
+      { name: "Django" },
+      { name: "Bootstrap" },
+    ],
     image: thumb5,
     live: "",
     github: "https://github.com/LEETAESEONG/TTiving",

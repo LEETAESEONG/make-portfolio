@@ -38,7 +38,7 @@ import ttiving from "../../public/resume/projects/ttiving.png";
 // about data
 const about = {
   title: "About me",
-  description: "hello my name is Lee Taeseong",
+  description: "Hello My name is Taeseon Lee.",
   info: [
     {
       fieldName: "Name",
@@ -69,29 +69,42 @@ const about = {
 // project data
 const project = {
   icon: "/assets/resume/badge.svg",
-  title: "My team projects",
-  description:
-    "everybody hello everybody hello everybody hello everybody hello everybody hello everybody hello",
+  title: "My team or single projects",
+  description: "I have experience participating in multiple projects.",
   items: [
+    {
+      serviceName: "My Portfolio",
+      theme: "Making my web portfolio",
+      position: "Front-end",
+      tech: "NextJS, shadcn/UI, TypeScript, Tailwind CSS",
+      duration: "August 2024 - August 2024",
+    },
+    {
+      serviceName: "Do-it",
+      theme: "Making simple todo list",
+      position: "Front-end",
+      tech: "Next.js, TypeScript, Tailwind CSS",
+      duration: "July 2024 - July 2024",
+    },
     {
       serviceName: "TTobakTTobak",
       theme: "AI-based Handwriting Creation Service",
       position: "Front-end, Team Leader",
-      tech: "React, Redux/Toolkit, React-Router-Dom, TypeScript",
+      tech: "React.js, Redux/Toolkit, React-Router-Dom, TypeScript, Emotion/styled",
       duration: "July 2023 - August 2023",
     },
     {
       serviceName: "DonWorry",
       theme: "User Spending Management and Improvement Service",
       position: "Front-end",
-      tech: "React-Native, TypeScript",
+      tech: "ReactNative, TypeScript, Figma",
       duration: "August 2023 - October 2023",
     },
     {
       serviceName: "RE:Fill",
       theme: "AI Self-Diagnosis and Consultation Platform for Hair Loss",
       position: "Front-end",
-      tech: "React, TypeScript, Tailwind CSS",
+      tech: "React.js, TypeScript, Tailwind CSS, Figma",
       duration: "July 2023 - August 2023",
     },
     {
@@ -99,7 +112,7 @@ const project = {
       theme:
         "Movie Recommendation and Filming Location Search Service Based on Custom Algorithms",
       position: "Full-stack, Team Leader",
-      tech: "Django, Vue, Vuex, Bootstrap",
+      tech: "Django, Vue.js, Vuex, Bootstrap",
       duration: "May 2023 - May 2023",
     },
   ],
@@ -108,8 +121,7 @@ const project = {
 const education = {
   icon: "/assets/resume/cap.svg",
   title: "My education",
-  description:
-    "hellohellohelloh ellohellohellohellohelloh ellohellohellohellohellohello",
+  description: "I have completed specialized training in programming.",
   items: [
     {
       institution: "Samsung SW Academy For Youth (SSAFY)",
@@ -127,7 +139,8 @@ const education = {
 // skills
 const skills = {
   title: "My skills",
-  description: "my skills",
+  description:
+    "I have skills in front-end development and can work with various programming languages.",
   skillList: [
     {
       icon: <FaHtml5 />,
@@ -310,7 +323,7 @@ export default function Resume() {
               </div>
             </TabsContent>
             {/* skills */}
-            <TabsContent value="skills" className="size-full pb-5">
+            <TabsContent value="skills" className="size-full">
               <div className="flex flex-col gap-[20px]">
                 <div className="flex flex-col gap-[20px] text-center xl:text-left">
                   <h3 className="text-4xl font-bold">{skills.title}</h3>
@@ -368,7 +381,9 @@ export default function Resume() {
                         className="flex items-center justify-center xl:justify-start
                         gap-4"
                       >
-                        <span className="text-modernzen/60">{item.fieldName}</span>
+                        <span className="text-modernzen/60">
+                          {item.fieldName}
+                        </span>
                         <span className="text-xl">{item.fieldValue}</span>
                       </li>
                     );

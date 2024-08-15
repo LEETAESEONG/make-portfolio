@@ -9,28 +9,28 @@ const services = [
     num: "01",
     title: "React.js",
     description:
-      "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+      "I have experience using React.js in three different projects. I can create responsive web designs with Tailwind CSS and manage state using Redux/Toolkit.",
     href: "https://github.com/LEETAESEONG/Ddobak",
   },
   {
     num: "02",
     title: "Next.js",
     description:
-      "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+      "Like React.js, I studied this technology on my own and learned about SSR through online courses. I am capable of creating responsive websites in simple projects.",
     href: "https://github.com/LEETAESEONG/Do-it",
   },
   {
     num: "03",
     title: "Vue.js",
     description:
-      "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+      "I received specialized training in Vue.js at the SSAFY. I am proficient in UI/UX development using Bootstrap and state management with Vuex.",
     href: "https://github.com/LEETAESEONG/TTiving",
   },
   {
     num: "04",
     title: "Figma",
     description:
-      "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.S",
+      "I am capable of creating simple UI/UX designs using Figma. I pay attention to details down to 1px and have experience designing for both web and mobile platforms.",
     href: "https://www.figma.com/design/cCTUT1gURh1zebCWU5K2Sa/C210?node-id=0-1&t=FnkXYcwEamqgYHNp-0",
   },
 ];

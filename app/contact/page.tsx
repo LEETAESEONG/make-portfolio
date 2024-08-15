@@ -56,8 +56,8 @@ export default function Contact() {
             <form className="flex flex-col gap-4 p-5 bg-[#113351] rounded-xl">
               <h3 className="text-3xl text-accent">Let{"'"}s work together</h3>
               <p className="text-modernzen/60">
-                hello hello hello hello hello hello hello hello hello hello
-                hello hello hello hello hello hello hello hello hello hello
+                Currently, the button is disabled. Please send me an email or
+                message. Thank you.
               </p>
               {/* input */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -86,7 +86,7 @@ export default function Contact() {
                 placeholder="Type your message here."
               />
               {/* button */}
-              <Button size="default" className="max-w-40">
+              <Button size="default" className="max-w-40" disabled={true}>
                 Send message
               </Button>
             </form>

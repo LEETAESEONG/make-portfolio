@@ -1,3 +1,5 @@
+"use client";
+
 import { Button } from "@/components/ui/button";
 import { FiDownload } from "react-icons/fi";
 
@@ -5,10 +7,14 @@ import { FiDownload } from "react-icons/fi";
 import Socail from "@/components/Social";
 import Photo from "@/components/Photo";
 import Stats from "@/components/Stats";
-import GetUsersData from "./utils/get-users-data";
 
 export default function Home() {
-  GetUsersData();
+  const handleDownload = () => {
+    const link = document.createElement("a");
+    link.href = "/lts_cv.pdf"; // 파일의 경로
+    link.download = "lts_cv.pdf"; // 다운로드될 파일 이름 설정
+    link.click();
+  };
   return (
     <section className="h-full">
       <div className="container mx-auto">
@@ -38,6 +44,7 @@ export default function Home() {
                 variant="outline"
                 size="lg"
                 className="uppercase flex items-center gap-2"
+                onClick={handleDownload}
               >
                 <span>Download CV</span>
                 <FiDownload className="text-xl" />
