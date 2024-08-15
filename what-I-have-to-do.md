@@ -13,3 +13,4 @@
 6. darkmode whitemode 만들기
 7. 이력서도 자주 업데이트 해야 함
 8. contact send message disabled 처리함
+9. 모바일 버전에서 링크 이동 했을 때 자동으로 닫히면 좋을 것 같다.
