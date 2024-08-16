@@ -63,3 +63,8 @@ export default function RootLayout({
   );
 }
 ```
+- 추가하는 김에 web analytics도 추가
+```bash
+npm i @vercel/analytics
+```
+- 위와 동일하게 children 밑에 두면 된다.
