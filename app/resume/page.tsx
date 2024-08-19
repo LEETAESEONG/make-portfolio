@@ -127,7 +127,7 @@ const education = {
       institution: "Samsung SW Academy For Youth (SSAFY)",
       degree:
         "Python Track: Intensive coding education based on web technologies and algorithms && Project-based self-directed learning",
-      duration: "Jan 2023 - Nov 2023",
+      duration: "Jan 2023 - Dec 2023",
     },
     {
       institution: "K-Digital Basic Competency Training",
