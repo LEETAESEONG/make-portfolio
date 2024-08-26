@@ -40,7 +40,7 @@ export default function MobileNav() {
                   "text-accent border-b-2 border-accent"
                 } text-xl capitalize hover:text-accent transition-all`}
               >
-                {link.name}
+                <SheetTrigger>{link.name}</SheetTrigger>
               </Link>
             );
           })}
