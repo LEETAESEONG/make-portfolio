@@ -38,7 +38,7 @@ import ttiving from "../../public/resume/projects/ttiving.png";
 // about data
 const about = {
   title: "About me",
-  description: "Hello My name is Taeseon Lee.",
+  description: "Hello My name is Taeseong Lee.",
   info: [
     {
       fieldName: "Name",
