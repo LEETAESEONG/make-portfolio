@@ -15,6 +15,8 @@
 8. contact send message disabled 처리함
 9. ~~모바일 버전에서 링크 이동 했을 때 자동으로 닫히면 좋을 것 같다.~~
   - link에 sheettrigger를 설정해서 link를 클릭하면 동시에 trigger가 작동하도록 조치 
+10. experience에서 이미지 클릭했을 때 trouble shooting 등 보일 수 있게 만들기
+
 
 # 설치
 
